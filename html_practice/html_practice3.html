@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+  <meta name="description" content="">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <ul>
+        <li><a href="file:///Users/air13/Desktop/MyWebsite/practice/html_practice/html_practice1.html">ページ1</a></li>
+        <li><a href="file:///Users/air13/Desktop/MyWebsite/practice/html_practice/html_practice2.html">ページ2</a></li>
+        <li><a href="file:///Users/air13/Desktop/MyWebsite/practice/html_practice/html_practice3.html">ページ3</a></li>
+        <li><a href="">コース内容</a></li>
+        <li><a href="">Q&A</a></li>
+        <li><a href="">お問い合わせ</a></li>
+      </ul>
+  <!--  give name, value,and required placeholder values to make it more useful-->  
+  <form action="ninja.php" method="post">
+    <dt>お問い合わせ項目</dt>
+    <dd><input type="checkbox">お問い合わせ<input type="checkbox">新規お申し込み<input type="checkbox">資料請求</dd>
+    <dt>お名前</dt>
+    <dd><input type="text" name="your-name"></dd>
+    <dt>ふりがな</dt>
+    <dd><input type="text" name="ふりがな"></dd>
+    <dt>メールアドレス<span class="must">※</span></dt>
+    <dd><input type="email" name="email"></dd>
+    <dt>電話番号<span class="must">※</span></dt>
+    <dd><input type="tel" name="telephone" name="tel" required placeholder="0312345678"></dd>
+    <dt>性別</dt>
+    <dd><input type="radio">男性<input type="radio">女性</dd>
+    <dt>当サイトを知ったきっかけ</dt>
+    <dd><select name="question-mode">
+      <option value="初級コース">初級コース</option>
+      <option value="中級コース">中級コース</option>
+      <option value="上級コース">上級コース</option>
+    </select></dd>
+    <dt>お問い合わせ内容<span class="must">※</span></dt>
+    <dd><textarea name="comment" cols="40" rows="8" minlength="5" maxlength="200"></textarea></dd>
+    <button type="submit" name="submit">送信する</button>  
+</form>
+  
+
+    <form action="ninja.php" method="post">
+        <fieldset>
+            <legend>お問い合わせ項目</legend>
+            <label><input type="checkbox" name="inquiry_type" value="inquiry">お問い合わせ</label>
+            <label><input type="checkbox" name="inquiry_type" value="new_application">新規お申し込み</label>
+            <label><input type="checkbox" name="inquiry_type" value="material_request">資料請求</label>
+        </fieldset>
+    <p>
+        <label for="your-name">お名前</label>
+        <input type="text" id="your-name" name="your-name">
+    </p>
+    <p>
+
+        <label for="furigana">ふりがな</label>
+        <input type="text" id="furigana" name="furigana">
+    </p>
+    <p>
+
+        <label for="email">メールアドレス※</label>
+        <input type="email" id="email" name="email">
+    </p>
+    <p>
+
+        <label for="telephone">電話番号※</label>
+        <input type="tel" id="telephone" name="telephone" required placeholder="0312345678">
+    </p>
+    <p>
+
+        <fieldset>
+            <legend>性別</legend>
+            <label><input type="radio" name="gender" value="male">男性</label>
+            <label><input type="radio" name="gender" value="female">女性</label>
+        </fieldset>
+    </p>
+    <p>
+        <label for="question-mode">当サイトを知ったきっかけ</label>
+    </p>
+        <select id="question-mode" name="question-mode">
+            <option value="初級コース">初級コース</option>
+            <option value="中級コース">中級コース</option>
+            <option value="上級コース">上級コース</option>
+        </select>
+    <p>
+        <label for="comment">お問い合わせ内容</label>
+    </p>
+        <textarea id="comment" name="comment" cols="40" rows="8" minlength="5" maxlength="200"></textarea>
+    
+    <p>
+        <input type="submit" value="送信">
+    </p>
+    </form>
+    <table border="1">
+        <caption>複雑な表を作ってみよう!</caption>
+        <thead>
+          <tr>
+            <th>---セル---</th>
+            <th>---セル---</th>
+            <th>---セル---</th>
+            <th>---セル---</th>
+            <th>---セル---</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td rowspan="3">---セル---</td>
+            <td colspan="2">---セル---</td>
+            <td>---セル---</td>
+            <td rowspan="2">---セル---</td>
+          </tr>
+          <tr>
+            <td>---セル---</td>
+            <td colspan="2" rowspan="2">---セル---</td>
+          </tr>
+          <tr>
+            <td>---セル---</td>
+            <td rowspan="2">---セル---</td>
+          </tr>
+          <tr>
+            <td colspan="4">---セル---</td>
+          </tr>
+        </tbody>
+      </table>    
+</body>
+</html>

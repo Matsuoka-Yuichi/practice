@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+   <meta charset="UTF-8">
+   <title></title>
+   <meta name="description" content="">
+   <script defer src="javascript_practice2.js"></script>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   <style>
+    .title{
+    font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+    text-align: center;
+    margin-top: 300px;
+    font-size: 100px;
+}
+#color-change{
+    display: block;
+    margin: 0 auto;
+    width: 100px;
+}
+    .box {
+    width: 310px;
+    height: 310px;
+    background-color: red;
+  }
+
+  *{margin: 0;padding: 0;list-style: none;box-sizing: border-box;}
+.list{
+    width: 1000px;
+    margin: 300px auto 0 auto;
+    overflow: hidden;
+}
+.list li{
+    width: 300px;
+    float: left;
+    padding: 20px;
+    background-color: pink;
+    margin-right: 20px;
+}
+h1{
+    text-align: center;
+    color: red;
+    font-size: 50px;
+    width: 100%;
+    font-weight: bold;
+    color: #458fa0;
+    display: none;
+}
+.input-group{
+    width: 500px;
+    margin: 300px auto 0 auto;
+}
+
+
+
+  </style>
+
+</head>
+<body>
+  
+
+  <h1 class="title">忍者CODE</h1>
+  <input type="color" id="color-change">
+
+  <div class="box"></div>
+
+  <ul class="list">
+    <li>これは忍者CODEの問題です。</li>
+    <li>これは忍者CODEの問題です。
+これは忍者CODEの問題です。これは忍者CODEの問題です。
+これは忍者CODEの問題です。これは忍者CODEの問題です。これは忍者CODEの問題です。これは忍者CODEの問題です。
+これは忍者CODEの問題です。</li>
+    <li>これは忍者CODEの問題です。これは忍者CODEの問題です。これは忍者CODEの問題です。これは忍者CODEの問題です。</li>
+</ul>
+
+<ul class="list list2">
+  <li>1番目の忍</li>
+  <li>2番目の忍</li>
+  <li>3番目の忍</li>
+  <li>4番目の忍</li>
+  <li>5番目の忍</li>
+</ul>
+
+<div class="input-group mb-3">
+  <h1 style="display: none;">誕生日おめでとう！</h1>  
+<div class="input-group-prepend">
+  <span class="input-group-text" id="basic-addon1">@</span>
+</div>
+<input type="date" id="birthday" class="form-control" value="1990-01-01" placeholder="誕生日">
+</div>
+
+
+</body>
